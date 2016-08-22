@@ -10,7 +10,6 @@ $inzu = json_decode($json);
 
 $content = $inzu->data[0]->entry;
 
-
 include("lib/template.php"); 
 
 ?>
