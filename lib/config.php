@@ -11,7 +11,8 @@ define("API_VERSION", "1.5");
 
 $data = INZU_GET("general/account_live");
 
-if($data->live_status != "true"){
+
+if ( $data->live_status != "true" ) {
 	
 	echo "Sorry the site is down at the moment.";
 	exit();
