@@ -5,7 +5,7 @@ include("lib/config.php");
 
 $page_title = "Home";
 
-// Call to INZU for 'Home Page' entry
+// Call to Inzu for 'Home Page' entry
 
 $inzu = INZU_GET("cms/home", array("tag"=>"hello"));
 
