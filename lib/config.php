@@ -5,12 +5,10 @@ define("API_PASS", "!HDq36P+0-Si90f+VmwT5WFklJdTwIGu");
 
 define("API_BASE", "https://api.inzu.net/");
 define("API_VERSION", "1.5");
-
-
-// Check API connection can be established or print error
+ 
+// Check API connection
 
 $data = INZU_GET("general/account_live");
-
 
 if ( $data->live_status != "true" ) {
 	
@@ -18,6 +16,5 @@ if ( $data->live_status != "true" ) {
 	exit();
 	
 }
-
 
 ?>

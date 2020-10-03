@@ -1,13 +1,17 @@
 <?php
 
+$page_title = "Home";
+
+// Load Includes
+
 include("lib/functions.php"); 
 include("lib/config.php"); 
 
-$page_title = "Home";
-
-// Call to Inzu for 'Home Page' entry
+// Get API Data
 
 $inzu = INZU_GET("cms/home", array("tag"=>"hello"));
+
+// HTML
 
 $content = $inzu->data[0]->entry;
 
